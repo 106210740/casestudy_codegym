@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản Lý Kho Hàng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quản Lý Kho Hàng 📦</h1>
+
+        <div class="card">
+            <h2>Thêm Sản Phẩm Mới</h2>
+            <input type="text" id="product-name" placeholder="Tên Sản Phẩm">
+            <input type="number" id="product-price" placeholder="Giá (VND)">
+            <input type="number" id="product-quantity" placeholder="Số Lượng">
+            <button onclick="handleAddProduct()">Thêm vào Kho</button>
+            <p id="message" class="message"></p>
+        </div>
+        
+        <div class="card">
+            <h2>Danh Sách Sản Phẩm Tồn Kho</h2>
+            <ul id="inventory-list">
+                <li>Đang tải dữ liệu...</li>
+            </ul>
+        </div>
+    
+    <script src="script.js"></script> 
+</body>
+</html>
